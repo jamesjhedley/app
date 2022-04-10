@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "App to serve as a playground of sorts",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/**",
+    "lint": "eslint . --fix",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "test": "jest src/ --forceExit --no-cache --coverage --verbose --runInBand --passWithNoTests --config=jest.unit.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesjhedley/app.git"
+  },
+  "author": "jamesjhedley@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesjhedley/app/issues"
+  },
+  "homepage": "https://github.com/jamesjhedley/app#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.5"
+  }
+}
